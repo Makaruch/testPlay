@@ -1,5 +1,8 @@
 package streams.protocol;
 
+/**
+ * Класс с сообщением готовности обработать задачу (для реализации backpressure)
+ */
 public class AckMessage {
   private AckMessage(){};
   private static AckMessage ackMessage;

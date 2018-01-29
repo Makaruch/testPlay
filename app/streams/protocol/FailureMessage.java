@@ -1,5 +1,8 @@
 package streams.protocol;
 
+/**
+ * Сообщение об ошибке в стриме. Отправлается поставщиком.
+ */
 public class FailureMessage {
   private final Throwable throwable;
 
