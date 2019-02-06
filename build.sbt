@@ -10,6 +10,7 @@ resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 scalaVersion := "2.11.11"
 
 releaseUseGlobalVersion:=false
+releaseIgnoreUntrackedFiles := true
 libraryDependencies ++= Seq( javaJdbc , javaWs, guice )
 
 libraryDependencies ++= Seq(
