@@ -19,4 +19,4 @@ libraryDependencies ++= Seq(
 
 unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )
 
-      
+publishTo := Some(Resolver.file("file",  new File( "C:\\Users\\Serge\\maven-releases" )) )      
