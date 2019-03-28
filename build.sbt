@@ -1,23 +1,24 @@
-name := "streamtest"
- 
+
+name := "testPlay"
+
 version := "1.0.1-SNAPSHOT"
-      
-lazy val `streamtest` = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
+
+lazy val testPlay = (project in file(".")).enablePlugins(PlayJava, PlayEbean, GitFlowPlugin)
 lazy val akkaVersion = "2.5.3"
 
-resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
-      
-scalaVersion := "2.11.11"
+//resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 
-releaseUseGlobalVersion:=false
+scalaVersion := "2.12.8"
+
+releaseUseGlobalVersion := false
 releaseIgnoreUntrackedFiles := true
-libraryDependencies ++= Seq( javaJdbc , javaWs, guice )
+libraryDependencies ++= Seq(javaJdbc, javaWs, guice)
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "org.postgresql" % "postgresql" % "42.0.0",
   "com.typesafe.akka" %% "akka-stream" % akkaVersion)
 
-unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )
+//unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )
 
-publishTo := Some(Resolver.file("file",  new File( "C:\\Users\\Serge\\maven-releases" )) )      
+//publishTo := Some(Resolver.file("file",  new File( "C:\\Users\\Serge\\maven-releases" )) )
