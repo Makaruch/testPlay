@@ -1,7 +1,7 @@
 
 name := "testPlay"
 
-version := "1.0.1-SNAPSHOT"
+//version := "1.0.1-SNAPSHOT"
 
 lazy val testPlay = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
 lazy val akkaVersion = "2.5.3"
