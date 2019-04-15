@@ -10,7 +10,7 @@ lazy val akkaVersion = "2.5.3"
 
 scalaVersion := "2.12.8"
 
-//releaseUseGlobalVersion := false
+//releaseUseGlobalVersion := fваваalse
 //releaseIgnoreUntrackedFiles := true
 libraryDependencies ++= Seq(javaJdbc, javaWs, guice)
 
