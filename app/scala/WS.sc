@@ -1,4 +1,5 @@
 /*
+/*
 
 */
 import java.io.File
@@ -47,4 +48,4 @@ object WS {
   def checkReleaseBranch(repository: Repository) = {
     repository.getAllRefs.keySet().toList.exists(_.contains("release"))
   }
-}
+}*/
