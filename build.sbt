@@ -1,3 +1,4 @@
+import sbtrelease.Version.Bump.Micro
 
 name := "testPlay"
 
@@ -18,6 +19,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "org.postgresql" % "postgresql" % "42.0.0",
   "com.typesafe.akka" %% "akka-stream" % akkaVersion)
+
+releaseVersionBump := Micro
 
 //unmanagedResourceDirectories in Test <+=  baseDirectory ( _ /"target/web/public/test" )
 
